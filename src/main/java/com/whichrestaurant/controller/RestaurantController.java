@@ -11,9 +11,8 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RestController
 public class RestaurantController {
 
-    @RequestMapping(method = GET, path = "/restaurants")
+    @RequestMapping(path = "/restaurants", method = GET)
     public List<String> restaurants() {
-
         return asList("Restaurante 1", "Restaurante 2", "Restaurante 3");
     }
 }
